@@ -33,60 +33,36 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 215 28% 17%; /* PRD: #1F2937 */
+    --foreground: 220 13% 91%; /* PRD: #E5E7EB */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 215 19% 27%; /* PRD: #374151 (surface) */
+    --card-foreground: 220 13% 91%; /* PRD: #E5E7EB (primaryText on card) */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 215 19% 27%; /* PRD: #374151 (surface) */
+    --popover-foreground: 220 13% 91%; /* PRD: #E5E7EB (primaryText on popover) */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 217 93% 68%; /* PRD: #60A5FA (accentBlue) */
+    --primary-foreground: 0 0% 100%; /* PRD: #FFFFFF (accentWhite for text on primary) */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 215 19% 27%; /* PRD: #374151 (surface for secondary elements) */
+    --secondary-foreground: 220 13% 91%; /* PRD: #E5E7EB (text on secondary) */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 215 19% 27%; /* PRD: #374151 (surface for muted backgrounds) */
+    --muted-foreground: 217 14% 65%; /* PRD: #9CA3AF (secondaryText) */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 217 93% 68%; /* PRD: #60A5FA (accentBlue) */
+    --accent-foreground: 0 0% 100%; /* PRD: #FFFFFF (accentWhite for text on accent) */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%; /* Keeping a distinct destructive color, slightly adjusted from original dark */
+    --destructive-foreground: 0 0% 98%; /* Keeping light text for destructive */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 216 15% 34%; /* PRD: #4B5563 (gridLines) */
+    --input: 216 15% 34%; /* PRD: #4B5563 (gridLines, for input borders) */
+    --ring: 217 93% 68%; /* PRD: #60A5FA (accentBlue for focus rings) */
   }
 }
 
@@ -97,5 +73,7 @@
 
   body {
     @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
